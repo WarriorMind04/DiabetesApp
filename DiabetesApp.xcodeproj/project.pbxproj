@@ -6,8 +6,37 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		74D002602F2A014900659685 /* DaibetesWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 74D002562F2A014800659685 /* DaibetesWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74D0025E2F2A014900659685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 746D5F8E2F22836300A13AFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D002552F2A014800659685;
+			remoteInfo = "DaibetesWatchApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74D002612F2A014900659685 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				74D002602F2A014900659685 /* DaibetesWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		746D5F962F22836300A13AFB /* DiabetesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiabetesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D002562F2A014800659685 /* DaibetesWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaibetesWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +45,22 @@
 			path = DiabetesApp;
 			sourceTree = "<group>";
 		};
+		74D002572F2A014800659685 /* DaibetesWatchApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DaibetesWatchApp Watch App";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		746D5F932F22836300A13AFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D002532F2A014800659685 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				746D5F982F22836300A13AFB /* DiabetesApp */,
+				74D002572F2A014800659685 /* DaibetesWatchApp Watch App */,
 				746D5F972F22836300A13AFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				746D5F962F22836300A13AFB /* DiabetesApp.app */,
+				74D002562F2A014800659685 /* DaibetesWatchApp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +98,12 @@
 				746D5F922F22836300A13AFB /* Sources */,
 				746D5F932F22836300A13AFB /* Frameworks */,
 				746D5F942F22836300A13AFB /* Resources */,
+				74D002612F2A014900659685 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74D0025F2F2A014900659685 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				746D5F982F22836300A13AFB /* DiabetesApp */,
@@ -68,6 +113,28 @@
 			);
 			productName = DiabetesApp;
 			productReference = 746D5F962F22836300A13AFB /* DiabetesApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74D002552F2A014800659685 /* DaibetesWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D002642F2A014900659685 /* Build configuration list for PBXNativeTarget "DaibetesWatchApp Watch App" */;
+			buildPhases = (
+				74D002522F2A014800659685 /* Sources */,
+				74D002532F2A014800659685 /* Frameworks */,
+				74D002542F2A014800659685 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				74D002572F2A014800659685 /* DaibetesWatchApp Watch App */,
+			);
+			name = "DaibetesWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "DaibetesWatchApp Watch App";
+			productReference = 74D002562F2A014800659685 /* DaibetesWatchApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +148,9 @@
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					746D5F952F22836300A13AFB = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					74D002552F2A014800659685 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
@@ -100,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				746D5F952F22836300A13AFB /* DiabetesApp */,
+				74D002552F2A014800659685 /* DaibetesWatchApp Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		746D5F942F22836300A13AFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D002542F2A014800659685 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +200,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74D002522F2A014800659685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74D0025F2F2A014900659685 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D002552F2A014800659685 /* DaibetesWatchApp Watch App */;
+			targetProxy = 74D0025E2F2A014900659685 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		746D5F9F2F22836400A13AFB /* Debug */ = {
@@ -310,6 +403,72 @@
 			};
 			name = Release;
 		};
+		74D002622F2A014900659685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VP98DA8WB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DaibetesWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.josemiguelgro.DiabetesApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.DiabetesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		74D002632F2A014900659685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VP98DA8WB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DaibetesWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.josemiguelgro.DiabetesApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josemiguelgro.DiabetesApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -327,6 +486,15 @@
 			buildConfigurations = (
 				746D5FA22F22836400A13AFB /* Debug */,
 				746D5FA32F22836400A13AFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D002642F2A014900659685 /* Build configuration list for PBXNativeTarget "DaibetesWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D002622F2A014900659685 /* Debug */,
+				74D002632F2A014900659685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
